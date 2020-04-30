@@ -1,3 +1,4 @@
 {
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "python.pythonPath": "F:\\AA VirtualEnv\\snake_neural_net_env"
 }
