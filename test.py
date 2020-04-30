@@ -1,10 +1,16 @@
 import tensorflow as tf
 from keras.backend.tensorflow_backend import set_session
-config = tf.ConfigProto()
+# Next line is depreciated in tensorflow 2.x
+#config = tf.ConfigProto()
+# Next line is testing new commant
+config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True  # dynamically grow the memory used on the GPU
 config.log_device_placement = True  # to log device placement (on which device the operation ran)
                                     # (nothing gets printed in Jupyter, only if you run it standalone)
-sess = tf.Session(config=config)
+# Next line is depreciated in tensorflow 2.x
+#sess = tf.Session(config=config)
+# Next line is testing new commant
+sess = tf.compat.v1.Session(config=config)
 set_session(sess)  # set this TensorFlow session as the default session for Keras
 
 
